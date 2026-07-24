@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Photo Collection</title>
+
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family:Arial, sans-serif;
+    }
+
+    body{
+        background:#fff7f9;
+        padding:20px;
+    }
+
+    .gallery{
+        display:grid;
+        grid-template-columns:repeat(3,1fr);
+        gap:18px;
+    }
+
+    .photo-card{
+        text-align:center;
+    }
+
+    .photo-card img{
+        width:100%;
+        aspect-ratio:1/1;
+        object-fit:cover;
+        border-radius:15px;
+        box-shadow:0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    .line{
+        width:70%;
+        height:3px;
+        margin:10px auto 0;
+        border-radius:20px;
+    }
+
+    @media(max-width:500px){
+        .gallery{
+            gap:12px;
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="gallery">
+
+    <div class="photo-card">
+        <img src="first photo.jpeg">
+        <div class="line">OUR FIRST PHOTO</div>
+    </div>
+
+    <div class="photo-card">
+        <img src="first birthday.jpeg">
+        <div class="line">FIRST BIRTHDAY CELEBRATION</div>
+    </div>
+
+    <div class="photo-card">
+        <img src="first fest.jpeg">
+        <div class="line">OUR FIRST FEST</div>
+    </div>
+
+    <div class="photo-card">
+        <img src="first srijan.jpeg">
+        <div class="line">OUR FIRST SRIJAN</div>
+    </div>
+
+    <div class="photo-card">
+        <img src="first after.jpeg">
+        <div class="line">OUR FIRST PHOTO AFTERWARDS</div>
+    </div>
+
+    <div class="photo-card">
+        <img src="first trip.jpeg">
+        <div class="line">OUR FIRST TRIP TOGETHER</div>
+    </div>
+</div>
+
+</body>
+</html>
